@@ -13,3 +13,10 @@ class Submenu(models.Model):
 
     def __str__(self):
         return self.submenuName
+
+class Product(models.Model):
+    submenu=models.ForeignKey(Submenu,on_delete=models.CASCADE)
+    productName=models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.productName
