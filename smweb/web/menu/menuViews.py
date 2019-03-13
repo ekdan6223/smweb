@@ -9,11 +9,11 @@ def index(request):
     subMenu_Name_list=Submenu.objects.all()[:10]
     prodouct_list=Product.objects.all()[:10]
     context ={'mainMenu_Name_list':mainMenu_Name_list,'subMenu_Name_list':subMenu_Name_list,'product_list':prodouct_list}
-    return render(request,'web/index.html',context)
+    return render(request, 'web/index.html', context)
 
-def stock(request,mainmenuName_id):
-    mainmenu=get_object_or_404(Mainmenu,pk=mainmenuName_id)
-    return render(request,'web/stock.html',{'mainmenu':mainmenu})
-
-def chart(request):
-    return render(request,'web/chart.html')
+def stock(request,mainmenu_id):
+    mainmenu=get_object_or_404(Mainmenu,pk=mainmenu_id)
+    mainMenu_Name_list = Mainmenu.objects.all()[:10]
+    subMenu_Name_list = Submenu.objects.all()[:10]
+    prodouct_list = Product.objects.all()[:10]
+    return render(request, 'web/stock.html', {'mainmenu':mainmenu,'mainMenu_Name_list':mainMenu_Name_list,'subMenu_Name_list':subMenu_Name_list,'product_list':prodouct_list,'mainmenu_id':mainmenu_id})

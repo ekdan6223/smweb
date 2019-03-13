@@ -33,7 +33,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/web">
         <div class="sidebar-brand-text mx-3">SignalMaster</div>
       </a>
 
@@ -42,7 +42,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="/web">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -55,9 +55,9 @@
         MainMenu
       </div>
         {% if error_message%}<p><strong><{{ error_message }}/strong></p>{% endif %}
-    {% for mainmenuName in mainQuestion_Name_list  %}
+    {% for mainmenuName in mainMenu_Name_list  %}
        <li class="nav-item">
-        <a class="nav-link" href="{{ mainmenuName.address }}/{{ mainmenuName.id }}/">
+        <a class="nav-link" href="/web/{{ mainmenuName.id }}/{{ mainmenuName.address }}">
           <i class="fas fa-fw fa-table"></i>
           <span>{{ mainmenuName.mainmenuName }}</span></a>
       </li>
@@ -77,22 +77,25 @@
       <div id="content">
 
         <!-- Topbar -->
-        <div class="header">
+       <div class="header">
         <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow ">
-
+        {% if error_message %}<p>{{ error_Message }}</p>{% endif %}
+        {%for submenuName in subMenu_Name_list  %}
+            {% if submenuName.mainmenu.id == mainmenu_id  %}
           <ul class="nav nav-tabs">
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ submenuName.submenuName }}</a>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Separated link</a>
+                {% for product in product_list %} <!--상품출력-->
+                    {% if product.submenu.id == submenuName.id %}<!--해당 메뉴에 맞는 메뉴만 출력-->
+                  <a class="dropdown-item" href="#">{{ product.productName }}</a>
+                    {% endif %}
+                    {% endfor %}
                 </div>
               </li>
           </ul>
-
+            {% endif %}
+        {% endfor %}
         </nav>
         </div>
         <!-- End of Topbar -->
@@ -225,7 +228,7 @@
   <script src={% static "vendor/jquery-easing/jquery.easing.min.js"%}></script>
 
   <!-- Custom scripts for all pages-->
-  <script src="js/sb-admin-2.min.js"></script>
+  <script src={% static "js/sb-admin-2.min.js"%}></script>
 
   <!-- Page level plugins -->
   <script src={% static "vendor/datatables/jquery.dataTables.min.js"%}></script>

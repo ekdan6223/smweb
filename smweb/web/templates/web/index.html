@@ -33,7 +33,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/web">
         <div class="sidebar-brand-text mx-3">SignalMaster</div>
       </a>
 
@@ -57,7 +57,7 @@
         {% if error_message%}<p><strong><{{ error_message }}/strong></p>{% endif %}
     {% for mainmenuName in mainMenu_Name_list  %}
        <li class="nav-item">
-        <a class="nav-link" href="{{ mainmenuName.address }}/{{ mainmenuName.id }}/">
+        <a class="nav-link" href="/web/{{ mainmenuName.id }}/{{ mainmenuName.address }}">
           <i class="fas fa-fw fa-table"></i>
           <span>{{ mainmenuName.mainmenuName }}</span></a>
       </li>
@@ -86,8 +86,8 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ submenuName.submenuName }}</a>
                 <div class="dropdown-menu">
-                {% for product in product_list %}
-                    {% if product.submenu.id == submenuName.id %}
+                {% for product in product_list %} <!--상품출력-->
+                    {% if product.submenu.id == submenuName.id %}<!--해당 메뉴에 맞는 메뉴만 출력-->
                   <a class="dropdown-item" href="#">{{ product.productName }}</a>
                     {% endif %}
                     {% endfor %}
@@ -133,7 +133,7 @@
                     		</div>
                     	</td>
                     	<td>
-                    		<a href="chart.html" class="btn btn-danger">차트 </a>
+                    		<a href="web/chart.html" class="btn btn-danger">차트 </a>
                     		<a href="#" class="btn btn-info">AI신호 </a>
                     		<a href="#" class="btn btn-primary">프리미엄신호 </a>
                   		</td>
@@ -148,7 +148,7 @@
                     		</div>
                     	</td>
                     	<td>
-                    		<a href="/web/chart.html" class="btn btn-danger">차트 </a>
+                    		<a href="web/chart.html" class="btn btn-danger">차트 </a>
                     		<a href="#" class="btn btn-info">AI신호 </a>
                     		<a href="#" class="btn btn-primary">프리미엄신호 </a>
                   		</td>
@@ -163,7 +163,7 @@
                     		</div>
                     	</td>
                     	<td>
-                    		<a href="chart.jsp" class="btn btn-danger">차트 </a>
+                    		<a href="web/chart.html" class="btn btn-danger">차트 </a>
                     		<a href="#" class="btn btn-info">AI신호 </a>
                     		<a href="#" class="btn btn-primary">프리미엄신호 </a>
                   		</td>
@@ -228,7 +228,7 @@
   <script src={% static "vendor/jquery-easing/jquery.easing.min.js"%}></script>
 
   <!-- Custom scripts for all pages-->
-  <script src="js/sb-admin-2.min.js"></script>
+  <script src={% static "js/sb-admin-2.min.js"%}></script>
 
   <!-- Page level plugins -->
   <script src={% static "vendor/datatables/jquery.dataTables.min.js"%}></script>
