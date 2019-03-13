@@ -86,11 +86,11 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ submenuName.submenuName }}</a>
                 <div class="dropdown-menu">
-                {% for product in product_list %}
-                    {% if product.submenu.id == submenuName.id %}
-                  <a class="dropdown-item" href="#">{{ product.productName }}</a>
-                    {% endif %}
-                    {% endfor %}
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
                 </div>
               </li>
           </ul>
@@ -133,7 +133,7 @@
                     		</div>
                     	</td>
                     	<td>
-                    		<a href="chart.html" class="btn btn-danger">차트 </a>
+                    		<a href="chart.jsp" class="btn btn-danger">차트 </a>
                     		<a href="#" class="btn btn-info">AI신호 </a>
                     		<a href="#" class="btn btn-primary">프리미엄신호 </a>
                   		</td>
@@ -148,7 +148,7 @@
                     		</div>
                     	</td>
                     	<td>
-                    		<a href="/web/chart.html" class="btn btn-danger">차트 </a>
+                    		<a href="chart.jsp" class="btn btn-danger">차트 </a>
                     		<a href="#" class="btn btn-info">AI신호 </a>
                     		<a href="#" class="btn btn-primary">프리미엄신호 </a>
                   		</td>
