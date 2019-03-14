@@ -1,7 +1,10 @@
-from django.shortcuts import render,get_object_or_404
+from django.shortcuts import render,get_object_or_404,render_to_response
 from web.menu.models import Mainmenu,Submenu,Product
 from django.http import HttpResponseRedirect
 from django.urls import  reverse
+import random
+import datetime
+import time
 
 def chart(request):
     mainMenu_Name_list=Mainmenu.objects.all()[:10]

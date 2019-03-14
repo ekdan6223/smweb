@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0c84517-cc86-4b46-962b-fb8acc9daec5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/menu/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/menu/menuViews.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/stock/stockViews.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/d3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/d3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/demo/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/chart/chartViews.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/chart/chartViews.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/templates/web/chart.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/web/chart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/web/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/web/stock.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/web/stock.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/chart/chartViews.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,18 +21,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/templates/web/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/templates/web/stock.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
+            <state relative-caret-position="527">
               <caret line="58" column="25" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
             </state>
           </provider>
@@ -45,7 +32,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../SmProject/venv/Lib/site-packages/django/urls/conf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
+            <state relative-caret-position="527">
               <caret line="72" selection-start-line="72" selection-end-line="72" />
             </state>
           </provider>
@@ -63,13 +50,30 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/templates/web/chart.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="35" column="90" selection-start-line="35" selection-start-column="90" selection-end-line="35" selection-end-column="90" />
+            <state relative-caret-position="470">
+              <caret line="49" column="11" lean-forward="true" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/demo/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="798">
+              <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/demo/chart-pie-demo.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -99,8 +103,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/chart/chartViews.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+            <state relative-caret-position="285">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="e#0#53#0" expanded="true" />
               </folding>
@@ -115,6 +119,7 @@
       <list>
         <option value="HTML File" />
         <option value="Python Script" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -137,12 +142,14 @@
         <option value="$PROJECT_DIR$/web/views.py" />
         <option value="$PROJECT_DIR$/web/menu/views.py" />
         <option value="$PROJECT_DIR$/web/chart/views.py" />
-        <option value="$PROJECT_DIR$/web/templates/web/chart.html" />
         <option value="$PROJECT_DIR$/web/stock/stockViews.py" />
         <option value="$PROJECT_DIR$/web/urls.py" />
         <option value="$PROJECT_DIR$/web/templates/web/index.html" />
         <option value="$PROJECT_DIR$/web/menu/menuViews.py" />
         <option value="$PROJECT_DIR$/web/templates/web/stock.html" />
+        <option value="$PROJECT_DIR$/static/js/demo/index.js" />
+        <option value="$PROJECT_DIR$/web/chart/chartViews.py" />
+        <option value="$PROJECT_DIR$/web/templates/web/chart.html" />
       </list>
     </option>
   </component>
@@ -158,7 +165,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -170,6 +176,17 @@
               <item name="smweb" type="b2602c69:ProjectViewProjectNode" />
               <item name="smweb" type="462c0819:PsiDirectoryNode" />
               <item name="smweb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smweb" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smweb" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="smweb" type="b2602c69:ProjectViewProjectNode" />
@@ -205,18 +222,20 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/react-stockcharts-master/react-stockcharts-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\KimHeeChul\PycharmProjects\SignalMaster\smweb\static\js" />
       <recent name="C:\Users\KimHeeChul\PycharmProjects\SignalMaster\smweb\web\menu" />
       <recent name="C:\Users\KimHeeChul\PycharmProjects\SignalMaster\smweb\web" />
       <recent name="C:\Users\KimHeeChul\PycharmProjects\SignalMaster\smweb" />
@@ -299,7 +318,9 @@
       <workItem from="1552352919194" duration="659000" />
       <workItem from="1552355550684" duration="1275000" />
       <workItem from="1552362540681" duration="12075000" />
-      <workItem from="1552436738633" duration="10518000" />
+      <workItem from="1552436738633" duration="11202000" />
+      <workItem from="1552522037271" duration="2190000" />
+      <workItem from="1552544596872" duration="5244000" />
     </task>
     <task id="LOCAL-00001" summary="1.submenu view 생성">
       <created>1552380036713</created>
@@ -315,21 +336,28 @@
       <option name="project" value="LOCAL" />
       <updated>1552457002306</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1.stock 관심종목 부분 선택했을때 그에 해당하는 submenu출력 로직 완료&#10;2.나머지 메뉴부분도 만들기만 하면 저절로 가능하게 설계 완료 &#10;3.submenu해당부분 밑에 product도 해당 부분 product만 출력 완료&#10;4.chart.html을 샘플로 일단 만들었습니다">
+      <created>1552465135397</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1552465135397</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24527000" />
+    <option name="totallyTimeSpent" value="32645000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26332623" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.329718" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -353,7 +381,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1.submenu view 생성" />
     <MESSAGE value="1.product 생성&#10;2.서브 메뉴 밑에 자동으로 정렬되게 for 문과 if 문 사용해서 생성" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.product 생성&#10;2.서브 메뉴 밑에 자동으로 정렬되게 for 문과 if 문 사용해서 생성" />
+    <MESSAGE value="1.stock 관심종목 부분 선택했을때 그에 해당하는 submenu출력 로직 완료&#10;2.나머지 메뉴부분도 만들기만 하면 저절로 가능하게 설계 완료 &#10;3.submenu해당부분 밑에 product도 해당 부분 product만 출력 완료&#10;4.chart.html을 샘플로 일단 만들었습니다" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.stock 관심종목 부분 선택했을때 그에 해당하는 submenu출력 로직 완료&#10;2.나머지 메뉴부분도 만들기만 하면 저절로 가능하게 설계 완료 &#10;3.submenu해당부분 밑에 product도 해당 부분 product만 출력 완료&#10;4.chart.html을 샘플로 일단 만들었습니다" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/smweb/settings.py">
@@ -390,16 +419,73 @@
     <entry file="file://$PROJECT_DIR$/web/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/models.py">
+    <entry file="file://$PROJECT_DIR$/web/models.py" />
+    <entry file="file://$PROJECT_DIR$/web/stock/stockViews.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/stock/stockViews.py">
+    <entry file="file://$PROJECT_DIR$/static/js/demo/chart-area-demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-513" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1463">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/demo/datatables-demo.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../SmProject/venv/Lib/site-packages/django/urls/conf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/web/stock.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="58" column="25" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/demo/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/demo/chart-pie-demo.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/chart/chartViews.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        <state relative-caret-position="285">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/menu/menuViews.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="198" selection-start-line="18" selection-start-column="198" selection-end-line="18" selection-end-column="198" />
           <folding>
             <element signature="e#0#53#0" expanded="true" />
           </folding>
@@ -418,49 +504,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/templates/web/chart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="35" column="90" selection-start-line="35" selection-start-column="90" selection-end-line="35" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/web/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../SmProject/venv/Lib/site-packages/django/urls/conf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+        <state relative-caret-position="470">
+          <caret line="49" column="11" lean-forward="true" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/menu/menuViews.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="198" selection-start-line="18" selection-start-column="198" selection-end-line="18" selection-end-column="198" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/web/stock.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="58" column="25" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
         </state>
       </provider>
     </entry>
